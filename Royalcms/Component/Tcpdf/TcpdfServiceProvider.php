@@ -89,7 +89,7 @@ class TcpdfServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->royalcms['tcpdf'] = $this->royalcms->share(function ($royalcms)
+        $this->royalcms->singleton('tcpdf', function ($royalcms)
         {
             return new Tcpdf($royalcms);
         });
