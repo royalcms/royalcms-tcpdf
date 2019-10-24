@@ -26,6 +26,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "5.0-dev"
+        },
+        "royalcms": {
+            "providers": [
+                "Royalcms\\Component\\Tcpdf\\TcpdfServiceProvider"
+            ],
+            "aliases": {
+                "RC_Tcpdf": "Royalcms\\Component\\Tcpdf\\Facades\\Tcpdf"
+            }
         }
     },
     "minimum-stability": "dev"
